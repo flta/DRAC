@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head> 
+<title> Formulaire </title>
+<meta charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+    <script type="text/javascript" src="formToWizard.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#SignupForm").formToWizard({ submitButton: 'SaveAccount' })
+        });
+    </script>
+</head>
+<body>
+<div id="contener">
+<div id="bandeau">
+</div>
+<nav id="menu">
+</nav>
+Accueil > Créer dossier
+
+<div id="formulaire">
+
+<header>
+<p>Bienvenue sur votre espace de création de dossiers.
+</p>
+</header>
+
+<form method="post" action="ACOMPLETER.php">
+<div class="date">
+<label>Date de commission</label> : <input type="date" />
+</div>
+<div class="vous">
+
+<!--Première partie formulaire-->
+<fieldset>
+<legend>Vos renseignements</legend>
+
+Nom du Musée : XXX
+Adresse : XXX
+Directeur/Responsable : XXX
+N°Téléphone : XXX
+Email : XXX
+<label>Personne morale qui sollicite l'avis de la commission </label>: <input type="text"/>
+
+BOUTON MODIFIER
+</fieldset>
+
+
+<!--Deuxième partie du formulaire-->
+<fieldset>
+<legend>Renseignements oeuvres</legend>
+<div>
+<label for="domaine">Domaine : </label>
+<select name="domaine">
+	<option value ="Archeologie">Archéologie</option>   
+	<option value ="Art contemporain depuis 1945">Art contemporain depuis 1945</option>
+	<option value ="Arts décoratifs et design">Arts décoratifs et design</option>
+	<option value ="Beaux arts 1900-1945">Beaux arts 1900-1945</option>
+	<option value ="Beaux arts XVIIè-XIXè">Beaux arts XVIIè-XIXè</option>
+	<option value ="Ethnologie">Ethnologie</option>
+	<option value ="Moyen-Age (Xè-XVè) et Renaissance">Moyen-Age (Xè-XVè) et Renaissance</option>
+    <option value ="Sciences et techniques">Sciences et techniques</option>
+</select>
+</div>
+<div>
+<label>Artiste / école / origine </label>: <input type="text"/>
+</div>
+<div>
+<label>Titre / appelation </label>: <input type="text"/>
+</div>
+<div>
+<label>Période / date </label>: <input type="text"/>
+</div>
+<div>
+<label for="techniques">Techniques </label>: 
+<select name="techniques">
+	<option value ="vocabulaire">Vocabulaire</option>
+</select>	
+</div>
+<div>
+<label for="matieres">Matières </label>: 
+<select name="matieres">
+	<option value ="vocabulaire">Vocabulaire</option>
+</select>	
+</div>
+<div>
+Dimensions (en cm): <label>Hauteur</label> <input type="text"/> <label>Largeur</label> <input type="text"/> <label>Longueur</label> <input type="text"/>
+</div>
+<div>
+<label>Marques / signatures </label>: <input type="text"/>
+</div>
+<div>
+<label for="etat">Etat de l'objet </label>: 
+<select name="etat">
+	<option value ="vocabulaire">Vocabulaire</option>
+</select>	
+</div>
+
+<!--Partie optionnelle sur l'archéologie-->
+<fieldset>
+<legend>Archéologie</legend>
+<div>
+<label>Date de la découverte ou de la fouille </label>: <input type="text"/>
+</div>
+<div>
+<p>
+       Conditions de la découverte :<br />
+       <input type="radio" name="decouverte" value="decouvertefortuite" id="decouvertefortuite" /> <label for="decouvertefortuite">Découverte fortuite</label><br />
+       <input type="radio" name="decouverte" value="fouilleprogrammee" id="fouilleprogrammee" /> <label for="fouilleprogrammee">Fouille programmée</label><br />
+       <input type="radio" name="decouverte" value="fouillepreventive" id="fouillepreventive" /> <label for="fouillepreventive">Fouille préventive</label>
+   </p>
+
+</div>
+<div>
+<label>Date de l'autorisation de la fouille </label>: <input type="text"/>
+</div>
+<div>
+<label>Nom du responsable de la fouille </label>: <input type="text"/>
+</div>
+<div>
+<label for="documentationfournie">Documentation fournie avec l'acquisition </label>: 
+<select name="documentationfournie">
+	<option value ="vocabulaire">Vocabulaire</option>
+</select>
+</div>
+</fieldset>
+
+<!--Troisième partie formulaire-->
+<fieldset>
+<legend>Mode d'acquisition</legend>
+<div>
+<p>
+       Mode d'acquisition :<br />
+       <input type="radio" name="acquisition" value="achat" id="achat" /> <label for="achat">Achat</label><br />
+       <input type="radio" name="acquisition" value="leg" id="leg" /> <label for="leg">Leg</label><br />
+       <input type="radio" name="acquisition" value="donation" id="donation" /> <label for="donation">Donation</label><br/>
+	   <input type="radio" name="acquisition" value="cession" id="cession" /> <label for="cession">Cession de l'Etat (archéologie)</label>
+   </p>
+</div>
+</fieldset>
+
+
+
+
+
+<div class="barre">
+1- Vos renseignements
+2- Renseignements objets
+3- Mode d'acquisition
+4- Pièces justificatives
+</div>
+
+<input type="submit" value="Enregistrer" /> 
+</form>
+</div>
+</div>
+</body>
+</html>
