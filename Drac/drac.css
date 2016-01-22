@@ -1,0 +1,28 @@
+
+
+div,p{
+
+    display:inline-block;
+	margin-left:3px;
+}
+#dossiers_bloc_1{
+   
+	height:5px;
+	padding:50px;
+    margin:150px
+	
+}
+#dossiers_bloc_2{
+	height:5px;
+	padding:50px;
+    margin:150px
+}
+#dossiers_bloc_3{
+	height:5px;
+	padding:50px;
+    margin:150px
+}
+img
+{
+    margin-right: 30px;
+}
