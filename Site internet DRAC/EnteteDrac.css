@@ -1,0 +1,78 @@
+/*CSS document */
+
+header{
+	background-color:#004090;
+	
+	 }
+	 
+#menu{
+	background-color:#606060;
+	padding: 0; margin: 0;
+	text-align: center; /* centrer le texte */
+	
+	}
+
+ul #menugris{
+		  display:inline-block;
+		  padding:0;
+		  margin:0;
+		  border-top: 1px solid #000000;
+		  border-bottom: 1px solid #000000;
+		  border-left: 1px solid #000000;
+		  height: 28px;
+		  width: 360px
+			
+		}
+#menugris li{
+		  display:inline-block;
+		  margin: 0 30px;
+		  height: 36px;
+		  padding: 0 35px;
+		  line-height: 36px;
+		  border-left: 1px solid #000000;
+		  border-right: 1px solid #000000;
+		  }
+
+/*ul#menugris {
+width : 600px;
+height : 30px;
+margin : 2em 0 0 0;
+padding : 0;
+background-color : #f4f9fd;
+border : 1px dashed black;
+list-style-type : none;
+}*/
+/*ul#menugris li {
+padding : 0 0.5em;
+line-height : 30px;
+}*/
+/*ul#menugris li.bouton_gauche {
+float : left;
+border-right : 1px dashed black;
+}
+
+ul#menugris li.bouton_droite {
+float : right;
+border-left : 1px dashed black;
+}
+
+ul#menugris a {
+color : black;
+text-decoration : none;
+padding : 0 0.5em;
+font : 0.8em "Trebuchet MS";
+}
+
+ul#menugris a:hover { text-decoration : underline; }
+
+ul#menugris a img {
+border : none;
+padding : 0 0.3em;
+}*/
+
+
+
+
+
+
+ 
