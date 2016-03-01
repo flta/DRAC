@@ -1,0 +1,31 @@
+
+
+div{
+
+    display:inline-block;
+	margin:10px;
+	width:200px;height:200px;border:0px solid #000;
+    background: InactiveCaption
+	}
+
+ p
+{
+   display: block;
+   text-align:center;
+   font-size: 12px;
+   font-weight : bold;
+font-weight : 800;
+}
+
+section{
+	
+	height:230px;
+margin-bottom:-80px;
+margin-top:80px;
+text-align:center;
+}
+h1{
+	
+	text-align:center;
+	margin-top:200px;
+}
